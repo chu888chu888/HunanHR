@@ -1,23 +1,20 @@
 HunanHR
 =======
 
-a symfony2 project - hunanhr.com
+a symfony2 project
 
-湖南英才网 hunanhr.com 网站源码
+[湖南英才网](http://www.hunanhr.com) 网站源码
 
 安装
 
 ```
-git clone https://github.com/wenmingtang/HunanHR.git
-
+git clone https://github.com/wenmingtang/HunanHR.git hunanhr
+cd hunanhr
 composer install
-
 cp app/config/parameters.yml.dist app/config/parameters.yml
-
-vim app/config/parameters.yml
+vim app/config/parameters.yml    // 设置数据库信息
 ```
-
-设置数据库用户名和库名后
+初始化数据库
 
 ```
 php app/console doctrine:database:create
